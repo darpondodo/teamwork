@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>上方選擇</title>
+    <link rel="stylesheet" href="./css/上方選擇 copy.css">
+</head>
+
+<body>
+    <div id="home-view">
+        <div class="title">
+            <h1 class="t-0">Title0</h1>
+            <h1 class="t-1">Title1</h1>
+            <h1 class="t-2">Title2</h1>
+        </div>
+        <div class="bgimg">
+            <img class="img0" src="./img/img0.jfif" alt="">
+            <img class="img1" src="./img/img1.jfif" alt="">
+            <img class="img2" src="./img/img2.jfif" alt="">
+        </div>
+    </div>
+
+
+    <script>
+        var text0 = document.querySelector('.t-0')
+        var text1 = document.querySelector('.t-1')
+        var text2 = document.querySelector('.t-2')
+        var img0 = document.querySelector('.img0')
+        var img1 = document.querySelector('.img1')
+        var img2 = document.querySelector('.img2')
+
+        text0.onmouseover = function(){
+            img0.classList.add("appear")
+            img1.classList.remove("appear")
+            img2.classList.remove("appear")
+        }
+        text1.onmouseover = function(){
+            img1.classList.add("appear")
+            img0.classList.remove("appear")
+            img2.classList.remove("appear")
+        }
+        text2.onmouseover = function(){
+            img2.classList.add("appear")
+            img1.classList.remove("appear")
+            img0.classList.remove("appear")
+        }
+        
+    </script>
+</body>
+
+</html>
